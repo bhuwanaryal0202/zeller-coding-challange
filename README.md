@@ -3,7 +3,7 @@
 
 Welcome to the Zeller Coding Challenge project! This is a simple React application integrated with GraphQL APIs that allows you to fetch and display a list of Zeller customers based on their user type (Admin/Manager).
 
-![Screenshot](./example.gif)
+![Alt text](./example.gif)
 
 ## Table of Contents
 
