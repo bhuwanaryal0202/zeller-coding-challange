@@ -66,6 +66,9 @@ src/
 
 In the project directory, you can run:
 
+## Install Project dependecies:
+### `npm install`
+
 ### `npm start`
 
 Runs the app in the development mode.\
