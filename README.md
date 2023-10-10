@@ -1,6 +1,66 @@
-# Getting Started with Create React App
+# Zeller Coding Challenge
+# Author - Bhuwan Aryal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Welcome to the Zeller Coding Challenge project! This is a simple React application integrated with GraphQL APIs that allows you to fetch and display a list of Zeller customers based on their user type (Admin/Manager).
+
+![Screenshot](./example.gif)
+
+## Table of Contents
+
+- [Getting Started](#getting-started)
+  - [Prerequisites](#prerequisites)
+  - [Installation](#installation)
+- [Project Structure](#project-structure)
+- [Usage](#usage)
+  - [Configuration](#configuration)
+  - [Running the Application](#running-the-application)
+- [Testing](#testing)
+- [Performance Optimization](#performance-optimization)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Getting Started
+
+### Prerequisites
+
+Before you begin, ensure you have met the following requirements:
+
+- Node.js and npm (Node Package Manager) installed on your development machine.
+- An AWS AppSync GraphQL API with API Key authentication. You will need the `aws-exports.js` configuration file for this project.
+
+### Installation
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/your-username/zeller-coding-challenge.git
+
+### Project Structure
+
+src/
+|-- components/
+|   |-- CustomerList.tsx     # React components related to the customer list
+|   |-- UserTypeSelector.tsx # React components for user type selection
+|   |-- ...
+|
+|-- graphql/
+|   |-- queries.ts           # GraphQL queries and mutations
+|   |-- ...
+|
+|-- aws-exports.js            # aws-exports file with all credential
+|-- App.tsx                   # The main application component
+|-- index.tsx                 # Entry point for rendering the app
+|-- apollo.js                 # Apollo Client configuration
+|
+|-- utils/                    # Utility functions or modules
+|
+|-- README.md                 # Project documentation
+|-- package.json
+|-- package-lock.json
+|-- tsconfig.json
+|-- ...
+
+
 
 ## Available Scripts
 
@@ -39,8 +99,15 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+### Performance Optimization
+Performance optimization is essential for ensuring the application runs smoothly. Here are some best practices to consider:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- Caching: Implement caching for API responses or frequently used data.
+- Code Splitting: Use code splitting to load only necessary code chunks.
+- Virtualization: Implement virtualization for long lists or tables.
+- Bundle Analysis: Regularly analyze your bundle size to identify and eliminate unnecessary dependencies.
+- Memoization: Consider memoization for expensive computations.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+
+### License
+This project is licensed under the MIT License - see the LICENSE file for details.

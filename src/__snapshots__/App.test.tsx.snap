@@ -1,0 +1,25 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders admin correctly 1`] = `
+<p>
+  Loading...
+</p>
+`;
+
+exports[`renders correctly 1`] = `
+<p>
+  Loading...
+</p>
+`;
+
+exports[`renders correctly 2`] = `
+<p>
+  Loading...
+</p>
+`;
+
+exports[`renders manager correctly 1`] = `
+<p>
+  Loading...
+</p>
+`;
